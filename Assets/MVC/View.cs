@@ -4,11 +4,6 @@ using UnityEngine;
 
 namespace MVC
 {
-    public abstract class View<T> : Initable<T>
-    {
-
-    }
-
     //Hint for unity inspector
-    public abstract class WalletView : View<Wallet> { }
+    public abstract class WalletView : Initable<Wallet> { }
 }
