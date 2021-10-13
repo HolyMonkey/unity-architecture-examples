@@ -51,6 +51,7 @@ namespace MVP_PassiveView
             _text.text = $"{amount}";
             _icon.color = Color.Lerp(Color.white, Color.red, amount / maxAmount);
         }
+        
         private void OnClick()
         {
             Click?.Invoke();
