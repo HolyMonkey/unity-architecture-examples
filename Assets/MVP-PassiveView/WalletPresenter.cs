@@ -23,7 +23,7 @@ namespace MVP_PassiveView
         public void Disable()
         {
             _model.CoinsChanged -= OnCoinsChanged;
-            _view.Click += OnViewClick;
+            _view.Click -= OnViewClick;
         }
 
         private void OnCoinsChanged()
